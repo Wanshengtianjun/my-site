@@ -1,0 +1,9 @@
+# local tools and preview files
+tools/edge-profile/
+tools/preview-*.png
+tools/frame-test.png
+tools/phone-*.png
+
+# OS noise
+Thumbs.db
+desktop.ini
