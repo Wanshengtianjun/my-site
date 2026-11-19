@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Machine — Small Web</title>
+  <meta name="description" content="A machine that switches itself off, and a twenty-second game about catching switches.">
+  <link rel="canonical" href="https://wanshengtianjun.github.io/my-site/machine.html">
+
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <meta property="og:title" content="Machine — Small Web">
+  <meta property="og:description" content="A machine that switches itself off, and a twenty-second game about catching switches.">
+  <meta property="og:image" content="https://wanshengtianjun.github.io/my-site/images/og-image.jpg">
+  <meta property="og:url" content="https://wanshengtianjun.github.io/my-site/machine.html">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Number 03</p>
+        <h1 class="hero-title">A machine that<br><em>turns itself off</em></h1>
+        <p class="hero-lede">
+          The useless machine does one thing: when you switch it on, an arm
+          comes out and switches it off again. Underneath it there is a small
+          game, because a page should do something.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="the-machine">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">The toy</p>
+          <h2 class="section-title" id="the-machine">Press the switch.</h2>
+          <p class="section-lede">
+            It will turn itself off. That is the whole machine — the same idea
+            as the wooden box that has been sold since the 1960s.
+          </p>
+        </div>
+
+        <div class="machine-stage">
+          <div class="machine" id="machine" data-state="off">
+            <div class="machine-lid" aria-hidden="true"></div>
+            <div class="machine-body">
+              <div class="machine-plate">
+                <span class="machine-led" aria-hidden="true"></span>
+                <button
+                  class="machine-switch"
+                  id="machine-switch"
+                  type="button"
+                  role="switch"
+                  aria-checked="false"
+                  aria-label="The switch on the machine">
+                  <span class="machine-toggle" aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="machine-arm" aria-hidden="true">
+                <span class="machine-hand"></span>
+              </div>
+            </div>
+            <p class="machine-caption" aria-hidden="true">Useless machine · model 01</p>
+          </div>
+          <p class="machine-status" id="machine-status" aria-live="polite">The switch is off.</p>
+          <p class="machine-hint">Click the switch — or reach it with Tab and press Enter.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="the-game">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">The game</p>
+          <h2 class="section-title" id="the-game">Catch the switch.</h2>
+          <p class="section-lede">
+            Twenty seconds. A switch appears somewhere in the box, you catch it,
+            and it moves. The best score stays for as long as the page is open.
+          </p>
+        </div>
+
+        <div class="game">
+          <div class="game-hud">
+            <span>Score <strong id="game-score">0</strong></span>
+            <span>Time <strong id="game-time">20</strong></span>
+            <span>Caught <strong id="game-hits">0</strong></span>
+          </div>
+
+          <div class="game-field" id="game-field">
+            <p class="game-hint" id="game-hint">Press start, then catch the red switch.</p>
+            <button class="game-target" id="game-target" type="button" hidden>
+              <span class="sr-only">Catch this switch</span>
+            </button>
+          </div>
+
+          <div class="game-controls">
+            <button class="btn btn-primary" id="game-start" type="button">Start</button>
+            <span class="game-best" id="game-best">Best 0</span>
+            <span class="sr-only" id="game-announce" aria-live="polite"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <script src="nav.js"></script>
+  <script src="machine.js"></script>
+</body>
+</html>
