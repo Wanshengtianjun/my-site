@@ -43,3 +43,9 @@ python tools/make_images.py
 Outputs go to `images/`: `hero.jpg` (1600 × 900), `og-image.jpg` (1200 × 630,
 under 100 KB), `icon-512.png`, `apple-touch-icon.png` (180 × 180) and
 `favicon-32.png` (32 × 32).
+
+## Deploying
+
+The site is live at <https://wanshengtianjun.github.io/my-site/>, served by
+GitHub Pages from this repository. `.github/workflows/pages.yml` builds and
+deploys it on every push to `main`; nothing else needs to be run.
