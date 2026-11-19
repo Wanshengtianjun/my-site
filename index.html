@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Small Web — quotes, ideas, and a machine that switches itself off</title>
+  <meta name="description" content="The learning site for Web Technologies 2026: a wall of quotes, five project ideas, and a small useless machine you can play with.">
+  <link rel="canonical" href="https://wanshengtianjun.github.io/my-site/">
+
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <meta property="og:title" content="Small Web">
+  <meta property="og:description" content="Quotes, five project ideas, and a machine that switches itself off.">
+  <meta property="og:image" content="https://wanshengtianjun.github.io/my-site/images/og-image.jpg">
+  <meta property="og:url" content="https://wanshengtianjun.github.io/my-site/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header id="site-header" class="site-header"></header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Web Technologies 2026 · learning site</p>
+          <h1 class="hero-title">Small<br><em>Web</em></h1>
+          <p class="hero-lede">
+            Three small things I built to learn the web: a wall of quotes,
+            five ideas I might turn into a project, and a machine whose only
+            job is to switch itself off.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="quotes.html">Read the quotes</a>
+            <a class="btn" href="machine.html">Try the machine</a>
+          </div>
+        </div>
+
+        <figure class="hero-figure">
+          <img src="images/hero.jpg" width="1600" height="900"
+               alt="A paper table with three objects: a quotation mark, a light bulb and a toggle switch.">
+          <figcaption>Three objects, one page each.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="inside">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">What is here</p>
+          <h2 class="section-title" id="inside">Four pages, one small site.</h2>
+          <p class="section-lede">
+            Every page is hand-written HTML with one stylesheet. There is no
+            framework and nothing to install — open a page and it works.
+          </p>
+        </div>
+
+        <div class="page-grid">
+          <a class="page-card" href="quotes.html">
+            <span class="num">01</span>
+            <h3>Quotes</h3>
+            <p>Nineteen lines I keep coming back to, with who said them and where.</p>
+            <span class="arrow">Open the wall →</span>
+          </a>
+
+          <a class="page-card" href="project.html">
+            <span class="num">02</span>
+            <h3>Ideas</h3>
+            <p>Five things I could build, who each one is for, and the one I picked.</p>
+            <span class="arrow">See the list →</span>
+          </a>
+
+          <a class="page-card" href="machine.html">
+            <span class="num">03</span>
+            <h3>Machine</h3>
+            <p>A switch, an arm, and a game where you catch switches before time runs out.</p>
+            <span class="arrow">Press the switch →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="built">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">How it is built</p>
+          <h2 class="section-title" id="built">Written once, reused everywhere.</h2>
+        </div>
+
+        <div class="prose">
+          <p>
+            The navigation and the footer are not copied into four pages. They
+            live in <code>nav.html</code> and <code>footer.html</code>, and a
+            small script fetches them into every page at load time. Change the
+            menu once, and all four pages change with it.
+          </p>
+          <p>
+            The rest is plain: semantic elements, one stylesheet, and three
+            scripts — the navigation, the random quote, and the machine. The
+            layout is fluid, the menu collapses to a button on a phone, and
+            every interactive control can be reached with a keyboard.
+          </p>
+          <p>
+            This is the learning site for Web Technologies 2026 at BiUH: the
+            place where the lessons end up. The quotations are real and
+            attributed; the machine is deliberately useless, which is the point.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
