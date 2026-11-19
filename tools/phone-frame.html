@@ -11,8 +11,12 @@
 <body>
   <iframe id="phone" src="../index.html" scrolling="no" title="Phone preview"></iframe>
   <script>
-    var page = new URLSearchParams(window.location.search).get('p');
-    if (page) {
+    var params = new URLSearchParams(window.location.search);
+    var full = params.get('u');
+    var page = params.get('p');
+    if (full) {
+      document.getElementById('phone').src = full;
+    } else if (page) {
       document.getElementById('phone').src = '../' + page;
     }
   </script>
